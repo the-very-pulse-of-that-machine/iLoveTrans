@@ -1,0 +1,8 @@
+fitz
+frontend
+pymupdf
+pypdf2
+pdfminer
+pdfminer.six
+jieba
+libretranslate
