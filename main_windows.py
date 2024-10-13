@@ -41,6 +41,11 @@ class PDFReader:
         #start.init(self.port)
         translation_thread = threading.Thread(target=start.run, args=(self.port,))
         translation_thread.start()
+        self.master.title(f"I❤️Trans - 请稍候，正在启动翻译......")  # 显示文件名
+        
+        detection_thread = threading.Thread(target=self.check_translation_service_status)
+        detection_thread.start()
+
         # 默认字体大小
         self.font_size = 12
         self.text_font = font.Font(size=self.font_size)
@@ -118,6 +123,37 @@ class PDFReader:
 
         self.cancel_requested = False  # 初始化取消标志
 
+    def check_translation_service_status(self):
+        """检测翻译服务是否启动"""
+        self.start_time = None
+        self.max_wait_time = 20000  # 等待最多 20000 毫秒 (20秒)
+        self.check_interval = 1000  # 每隔 1000 毫秒 (1秒) 检查一次
+        
+        def check_status():
+            """检查翻译服务的内部函数"""
+            try:
+                response = transapi.translate_text("测试文本", self.port)
+                if response:
+                    self.loading_label.config(text="翻译服务已启动")
+                    self.master.title(f"I❤️Trans - Translator OK ✅ - backend address: 127.0.0.1:{self.port}") 
+                    return
+            except requests.exceptions.RequestException:
+                pass
+            
+            # 检查是否超时
+            if self.start_time is None:
+                self.start_time = self.master.winfo_toplevel().after(self.check_interval, check_status)
+            else:
+                current_time = self.master.winfo_toplevel().tk.call('after', 'info')
+                if int(current_time[-1]) - int(self.start_time[-1]) < self.max_wait_time:
+                    self.master.after(self.check_interval, check_status)
+                else:
+                    self.loading_label.config(text="翻译服务启动失败🛑")
+        
+        # 开始检查
+        check_status()
+
+    
     def on_closing(self):
         """处理窗口关闭事件，确保关闭所有线程并终止程序"""
         if messagebox.askokcancel("Quit", "Do you want to quit?"):
@@ -129,7 +165,7 @@ class PDFReader:
         if file_path:
             self.pdf_document = fitz.open(file_path)
             self.current_page = 0
-            self.master.title(f"I❤️Trans - {os.path.basename(file_path)}")  # 显示文件名
+            self.master.title(f"I❤️Trans - backend address 127.0.0.1:{self.port} - {os.path.basename(file_path)} ")  # 显示文件名
             self.display_page()
 
             translation_thread = threading.Thread(target=self.display_translation, args=(file_path, self.port))

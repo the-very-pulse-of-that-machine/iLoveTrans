@@ -64,7 +64,7 @@ def run(port):
         if not test_github():
             return
         
-        from libretranslate.main import main
+        from libretranslate_totally_local.main import main
         main()
     except Exception as e:
         err = str(e)

@@ -1,0 +1,749 @@
+# Turkish translations for LibreTranslate.
+# Copyright (C) 2023 LibreTranslate Authors
+# This file is distributed under the same license as the LibreTranslate
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LibreTranslate 1.3.9\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-09-21 11:57-0400\n"
+"PO-Revision-Date: 2024-09-03 16:09+0000\n"
+"Last-Translator: Murat Doğançay <murat.dogancay@gmail.com>\n"
+"Language: tr\n"
+"Language-Team: Turkish "
+"<https://hosted.weblate.org/projects/libretranslate/app/tr/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: libretranslate/app.py:80
+msgid "Invalid JSON format"
+msgstr "Geçersiz JSON biçimi"
+
+#: libretranslate/app.py:180 libretranslate/templates/app.js.template:465
+msgid "Auto Detect"
+msgstr "Otomatik Algıla"
+
+#: libretranslate/app.py:273
+msgid "Unauthorized"
+msgstr "Yetkisiz"
+
+#: libretranslate/app.py:291
+msgid "Too many request limits violations"
+msgstr "Çok fazla istekte bulunarak, istek sınırı aşıldı"
+
+#: libretranslate/app.py:298
+msgid "Invalid API key"
+msgstr "Geçersiz API anahtarı"
+
+#: libretranslate/app.py:317
+msgid "Please contact the server operator to get an API key"
+msgstr "Bir API anahtarı almak için lütfen sunucu yöneticisiyle iletişime geçin"
+
+#: libretranslate/app.py:319
+#, python-format
+msgid "Visit %(url)s to get an API key"
+msgstr "API anahtarı almak için %(url)s adresini ziyaret edin"
+
+#: libretranslate/app.py:366
+msgid "Slowdown:"
+msgstr "Yavaşlama:"
+
+#: libretranslate/app.py:583 libretranslate/app.py:585
+#: libretranslate/app.py:587 libretranslate/app.py:796
+#: libretranslate/app.py:798 libretranslate/app.py:800
+#: libretranslate/app.py:957 libretranslate/app.py:1114
+#: libretranslate/app.py:1116 libretranslate/app.py:1118
+#: libretranslate/app.py:1120
+#, python-format
+msgid "Invalid request: missing %(name)s parameter"
+msgstr "Geçersiz istek: eksik %(name)s parametresi"
+
+#: libretranslate/app.py:592
+#, python-format
+msgid "Invalid request: %(name)s parameter is not a number"
+msgstr "Geçersiz istek: %(name)s parametresi bir sayı değil"
+
+#: libretranslate/app.py:595
+#, python-format
+msgid "Invalid request: %(name)s parameter must be <= %(value)s"
+msgstr ""
+"Geçersiz istek: %(name)s parametresi %(value)s değerinden küçük veya eşit"
+" olmalı"
+
+#: libretranslate/app.py:612 libretranslate/app.py:622
+#, python-format
+msgid "Invalid request: request (%(size)s) exceeds text limit (%(limit)s)"
+msgstr "Geçersiz istek: istek (%(size)s) metin sınırını aşıyor (%(limit)s)"
+
+#: libretranslate/app.py:637 libretranslate/app.py:642
+#: libretranslate/app.py:811 libretranslate/app.py:816
+#, python-format
+msgid "%(lang)s is not supported"
+msgstr "%(lang)s desteklenmiyor"
+
+#: libretranslate/app.py:648
+#, python-format
+msgid "%(format)s format is not supported"
+msgstr "%(format)s biçimi desteklenmiyor"
+
+#: libretranslate/app.py:657 libretranslate/app.py:681
+#, python-format
+msgid ""
+"%(tname)s (%(tcode)s) is not available as a target language from "
+"%(sname)s (%(scode)s)"
+msgstr ""
+"%(tname)s (%(tcode)s), %(sname)s (%(scode)s) için hedef dil olarak "
+"kullanılamıyor"
+
+#: libretranslate/app.py:701
+#, python-format
+msgid "Cannot translate text: %(text)s"
+msgstr "Metin çevrilemiyor: %(text)s"
+
+#: libretranslate/app.py:788 libretranslate/app.py:849
+msgid "Files translation are disabled on this server."
+msgstr "Dosya çevirisi bu sunucuda devre dışı bırakıldı."
+
+#: libretranslate/app.py:803
+msgid "Invalid request: empty file"
+msgstr "Geçersiz istek: boş dosya"
+
+#: libretranslate/app.py:806
+msgid "Invalid request: file format not supported"
+msgstr "Geçersiz istek: dosya biçimi desteklenmiyor"
+
+#: libretranslate/app.py:857
+msgid "Invalid filename"
+msgstr "Geçersiz dosya adı"
+
+#: libretranslate/app.py:1099
+msgid "Suggestions are disabled on this server."
+msgstr "Öneriler bu sunucuda devre dışı bırakıldı."
+
+#: libretranslate/locales/.langs.py:1
+msgid "English"
+msgstr "İngilizce"
+
+#: libretranslate/locales/.langs.py:2
+msgid "Albanian"
+msgstr "Arnavutça"
+
+#: libretranslate/locales/.langs.py:3
+msgid "Arabic"
+msgstr "Arapça"
+
+#: libretranslate/locales/.langs.py:4
+msgid "Azerbaijani"
+msgstr "Azerice"
+
+#: libretranslate/locales/.langs.py:5
+msgid "Bengali"
+msgstr "Bengalce"
+
+#: libretranslate/locales/.langs.py:6
+msgid "Bulgarian"
+msgstr "Bulgarca"
+
+#: libretranslate/locales/.langs.py:7
+msgid "Catalan"
+msgstr "Katalanca"
+
+#: libretranslate/locales/.langs.py:8
+msgid "Chinese"
+msgstr "Çince"
+
+#: libretranslate/locales/.langs.py:9
+msgid "Chinese (traditional)"
+msgstr "Çince (geleneksel)"
+
+#: libretranslate/locales/.langs.py:10
+msgid "Czech"
+msgstr "Çekçe"
+
+#: libretranslate/locales/.langs.py:11
+msgid "Danish"
+msgstr "Danca"
+
+#: libretranslate/locales/.langs.py:12
+msgid "Dutch"
+msgstr "Felemenkçe"
+
+#: libretranslate/locales/.langs.py:13
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: libretranslate/locales/.langs.py:14
+msgid "Estonian"
+msgstr "Estonca"
+
+#: libretranslate/locales/.langs.py:15
+msgid "Finnish"
+msgstr "Fince"
+
+#: libretranslate/locales/.langs.py:16
+msgid "French"
+msgstr "Fransızca"
+
+#: libretranslate/locales/.langs.py:17
+msgid "German"
+msgstr "Almanca"
+
+#: libretranslate/locales/.langs.py:18
+msgid "Greek"
+msgstr "Yunanca"
+
+#: libretranslate/locales/.langs.py:19
+msgid "Hebrew"
+msgstr "İbranice"
+
+#: libretranslate/locales/.langs.py:20
+msgid "Hindi"
+msgstr "Hintçe"
+
+#: libretranslate/locales/.langs.py:21
+msgid "Hungarian"
+msgstr "Macarca"
+
+#: libretranslate/locales/.langs.py:22
+msgid "Indonesian"
+msgstr "Endonezce"
+
+#: libretranslate/locales/.langs.py:23
+msgid "Irish"
+msgstr "İrlandaca"
+
+#: libretranslate/locales/.langs.py:24
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: libretranslate/locales/.langs.py:25
+msgid "Japanese"
+msgstr "Japonca"
+
+#: libretranslate/locales/.langs.py:26
+msgid "Korean"
+msgstr "Korece"
+
+#: libretranslate/locales/.langs.py:27
+msgid "Latvian"
+msgstr "Letonca"
+
+#: libretranslate/locales/.langs.py:28
+msgid "Lithuanian"
+msgstr "Litvanyaca"
+
+#: libretranslate/locales/.langs.py:29
+msgid "Malay"
+msgstr "Malayca"
+
+#: libretranslate/locales/.langs.py:30
+msgid "Norwegian"
+msgstr "Norveççe"
+
+#: libretranslate/locales/.langs.py:31
+msgid "Persian"
+msgstr "Farsça"
+
+#: libretranslate/locales/.langs.py:32
+msgid "Polish"
+msgstr "Lehçe"
+
+#: libretranslate/locales/.langs.py:33
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: libretranslate/locales/.langs.py:34
+msgid "Romanian"
+msgstr "Rumence"
+
+#: libretranslate/locales/.langs.py:35
+msgid "Russian"
+msgstr "Rusça"
+
+#: libretranslate/locales/.langs.py:36
+msgid "Slovak"
+msgstr "Slovakça"
+
+#: libretranslate/locales/.langs.py:37
+msgid "Slovenian"
+msgstr "Slovence"
+
+#: libretranslate/locales/.langs.py:38
+msgid "Spanish"
+msgstr "İspanyolca"
+
+#: libretranslate/locales/.langs.py:39
+msgid "Swedish"
+msgstr "İsveççe"
+
+#: libretranslate/locales/.langs.py:40
+msgid "Tagalog"
+msgstr "Tagalogca"
+
+#: libretranslate/locales/.langs.py:41
+msgid "Thai"
+msgstr "Tayca"
+
+#: libretranslate/locales/.langs.py:42
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: libretranslate/locales/.langs.py:43
+msgid "Ukranian"
+msgstr "Ukraynaca"
+
+#: libretranslate/locales/.langs.py:44
+msgid "Urdu"
+msgstr "Urduca"
+
+#: libretranslate/locales/.swag.py:1
+msgid "Retrieve list of supported languages"
+msgstr "Desteklenen dillerin listesini al"
+
+#: libretranslate/locales/.swag.py:2
+msgid "List of languages"
+msgstr "Dil listesi"
+
+#: libretranslate/locales/.swag.py:3
+msgid "translate"
+msgstr "çevir"
+
+#: libretranslate/locales/.swag.py:4
+msgid "Translate text from a language to another"
+msgstr "Bir dilden diğerine metin çevirin"
+
+#: libretranslate/locales/.swag.py:5 libretranslate/templates/index.html:224
+msgid "Translated text"
+msgstr "Çevirilen metin"
+
+#: libretranslate/locales/.swag.py:6
+msgid "Invalid request"
+msgstr "Geçersiz istek"
+
+#: libretranslate/locales/.swag.py:7
+msgid "Translation error"
+msgstr "Çeviri hatası"
+
+#: libretranslate/locales/.swag.py:8
+msgid "Slow down"
+msgstr "Yavaşla"
+
+#: libretranslate/locales/.swag.py:9
+msgid "Banned"
+msgstr "Yasaklandı"
+
+#: libretranslate/locales/.swag.py:10
+msgid "Hello world!"
+msgstr "Merhaba dünya!"
+
+#: libretranslate/locales/.swag.py:11
+msgid "Text(s) to translate"
+msgstr "Çevrilecek metin"
+
+#: libretranslate/locales/.swag.py:12
+msgid "Source language code"
+msgstr "Kaynak dil kodu"
+
+#: libretranslate/locales/.swag.py:13
+msgid "Target language code"
+msgstr "Hedef dil kodu"
+
+#: libretranslate/locales/.swag.py:14
+msgid "text"
+msgstr "metin"
+
+#: libretranslate/locales/.swag.py:15
+msgid "html"
+msgstr "html"
+
+#: libretranslate/locales/.swag.py:16
+msgid ""
+"Format of source text:\n"
+" * `text` - Plain text\n"
+" * `html` - HTML markup\n"
+msgstr ""
+"Kaynak metin biçimi:\n"
+" * `text` - Düz metin\n"
+" * `html` - HTML işaretlemesi\n"
+
+#: libretranslate/locales/.swag.py:17
+msgid "Preferred number of alternative translations"
+msgstr "Tercih edilen alternatif çeviri sayısı"
+
+#: libretranslate/locales/.swag.py:18
+msgid "API key"
+msgstr "API anahtarı"
+
+#: libretranslate/locales/.swag.py:19
+msgid "Translate file from a language to another"
+msgstr "Bir dilden diğerine dosya çevirin"
+
+#: libretranslate/locales/.swag.py:20
+msgid "Translated file"
+msgstr "Çevrilen dosya"
+
+#: libretranslate/locales/.swag.py:21
+msgid "File to translate"
+msgstr "Çevrilecek dosya"
+
+#: libretranslate/locales/.swag.py:22
+msgid "Detect the language of a single text"
+msgstr "Tek bir metnin dilini algıla"
+
+#: libretranslate/locales/.swag.py:23
+msgid "Detections"
+msgstr "Algılamalar"
+
+#: libretranslate/locales/.swag.py:24
+msgid "Detection error"
+msgstr "Algılama hatası"
+
+#: libretranslate/locales/.swag.py:25
+msgid "Text to detect"
+msgstr "Algılanacak metin"
+
+#: libretranslate/locales/.swag.py:26
+msgid "Retrieve frontend specific settings"
+msgstr "Ön uca özel ayarları al"
+
+#: libretranslate/locales/.swag.py:27
+msgid "frontend settings"
+msgstr "ön uç ayarları"
+
+#: libretranslate/locales/.swag.py:28
+msgid "frontend"
+msgstr "ön uç"
+
+#: libretranslate/locales/.swag.py:29
+msgid "Submit a suggestion to improve a translation"
+msgstr "Bir çeviriyi iyileştirmek için öneri gönderin"
+
+#: libretranslate/locales/.swag.py:30
+msgid "Success"
+msgstr "Başarılı"
+
+#: libretranslate/locales/.swag.py:31
+msgid "Not authorized"
+msgstr "Yetkili değil"
+
+#: libretranslate/locales/.swag.py:32
+msgid "Original text"
+msgstr "Orijinal metin"
+
+#: libretranslate/locales/.swag.py:33
+msgid "Suggested translation"
+msgstr "Önerilen çeviri"
+
+#: libretranslate/locales/.swag.py:34
+msgid "Language of original text"
+msgstr "Orijinal metnin dili"
+
+#: libretranslate/locales/.swag.py:35
+msgid "Language of suggested translation"
+msgstr "Önerilen çevirinin dili"
+
+#: libretranslate/locales/.swag.py:36
+msgid "feedback"
+msgstr "geri bildirim"
+
+#: libretranslate/locales/.swag.py:37
+msgid "Language code"
+msgstr "Dil kodu"
+
+#: libretranslate/locales/.swag.py:38
+msgid "Human-readable language name (in English)"
+msgstr "Okunabilir dil adı (İngilizce olarak)"
+
+#: libretranslate/locales/.swag.py:39
+msgid "Supported target language codes"
+msgstr "Desteklenen hedef dil kodları"
+
+#: libretranslate/locales/.swag.py:40
+msgid "Translated text(s)"
+msgstr "Çevirilen metin"
+
+#: libretranslate/locales/.swag.py:41
+msgid "Error message"
+msgstr "Hata mesajı"
+
+#: libretranslate/locales/.swag.py:42
+msgid "Reason for slow down"
+msgstr "Yavaşlama nedeni"
+
+#: libretranslate/locales/.swag.py:43
+msgid "Translated file url"
+msgstr "Çevrilen dosya URL'si"
+
+#: libretranslate/locales/.swag.py:44
+msgid "Confidence value"
+msgstr "Güven değeri"
+
+#: libretranslate/locales/.swag.py:45
+msgid "Character input limit for this language (-1 indicates no limit)"
+msgstr "Bu dil için karakter giriş sınırı (-1, sınır olmadığını gösterir)"
+
+#: libretranslate/locales/.swag.py:46
+msgid "Frontend translation timeout"
+msgstr "Ön uç çeviri zaman aşımı"
+
+#: libretranslate/locales/.swag.py:47
+msgid "Whether the API key database is enabled."
+msgstr "API anahtarı veri tabanının etkin olup olmadığı."
+
+#: libretranslate/locales/.swag.py:48
+msgid "Whether an API key is required."
+msgstr "Bir API anahtarının gerekli olup olmadığı."
+
+#: libretranslate/locales/.swag.py:49
+msgid "Whether submitting suggestions is enabled."
+msgstr "Öneri göndermenin etkin olup olmadığı."
+
+#: libretranslate/locales/.swag.py:50
+msgid "Supported files format"
+msgstr "Desteklenen dosya biçimi"
+
+#: libretranslate/locales/.swag.py:51
+msgid "Whether submission was successful"
+msgstr "Gönderimin başarılı olup olmadığı"
+
+#: libretranslate/templates/app.js.template:31
+#: libretranslate/templates/app.js.template:292
+#: libretranslate/templates/app.js.template:296
+msgid "Copy text"
+msgstr "Metni kopyala"
+
+#: libretranslate/templates/app.js.template:80
+#: libretranslate/templates/app.js.template:86
+#: libretranslate/templates/app.js.template:91
+#: libretranslate/templates/app.js.template:279
+#: libretranslate/templates/app.js.template:349
+#: libretranslate/templates/app.js.template:437
+#: libretranslate/templates/app.js.template:485
+#, python-format
+msgid "Cannot load %(url)s"
+msgstr "%(url)s yüklenemiyor"
+
+#: libretranslate/templates/app.js.template:270
+#: libretranslate/templates/app.js.template:340
+#: libretranslate/templates/app.js.template:418
+#: libretranslate/templates/app.js.template:429
+msgid "Unknown error"
+msgstr "Bilinmeyen hata"
+
+#: libretranslate/templates/app.js.template:293
+msgid "Copied"
+msgstr "Kopyalandı"
+
+#: libretranslate/templates/app.js.template:337
+msgid ""
+"Thanks for your correction. Note the suggestion will not take effect "
+"right away."
+msgstr ""
+"Düzeltmeniz için teşekkürler. Önerinin hemen etkili olmayacağını "
+"unutmayın."
+
+#: libretranslate/templates/app.js.template:461
+msgid "No languages available. Did you install the models correctly?"
+msgstr "Kullanılabilir dil yok. Modelleri doğru şekilde yüklediniz mi?"
+
+#: libretranslate/templates/app.js.template:528
+#, python-format
+msgid "Type in your API Key. If you need an API key, %(instructions)s"
+msgstr ""
+"API anahtarınızı yazın. Bir API anahtarına ihtiyacınız varsa, "
+"%(instructions)s"
+
+#: libretranslate/templates/app.js.template:528
+msgid "press the \"Get API Key\" link."
+msgstr "\"API Anahtarı Al\" bağlantısına tıklayın."
+
+#: libretranslate/templates/app.js.template:528
+msgid "contact the server operator."
+msgstr "sunucu yöneticisiyle iletişime geçin."
+
+#: libretranslate/templates/index.html:9 libretranslate/templates/index.html:27
+#: libretranslate/templates/index.html:338
+msgid "Free and Open Source Machine Translation API"
+msgstr "Özgür ve Açık Kaynaklı Makine Çevirisi API'si"
+
+#: libretranslate/templates/index.html:10
+#: libretranslate/templates/index.html:31
+msgid ""
+"Free and Open Source Machine Translation API. Self-hosted, offline "
+"capable and easy to setup. Run your own API server in just a few minutes."
+msgstr ""
+"Özgür ve Açık Kaynaklı Makine Çevirisi API'si. Kendiniz "
+"barındırabileceğiniz, çevrim dışı çalışabilir ve kurulumu kolay. Sadece "
+"birkaç dakika içinde kendi API sunucunuzu çalıştırın."
+
+#: libretranslate/templates/index.html:11
+msgid "translation"
+msgstr "çeviri"
+
+#: libretranslate/templates/index.html:11
+msgid "api"
+msgstr "api"
+
+#: libretranslate/templates/index.html:67
+msgid "API Docs"
+msgstr "API Belgeleri"
+
+#: libretranslate/templates/index.html:69
+msgid "Get API Key"
+msgstr "API Anahtarı Al"
+
+#: libretranslate/templates/index.html:71
+msgid "GitHub"
+msgstr "GitHub"
+
+#: libretranslate/templates/index.html:73
+msgid "Set API Key"
+msgstr "API Anahtarını Ayarla"
+
+#: libretranslate/templates/index.html:75
+msgid "Change language"
+msgstr "Dili değiştir"
+
+#: libretranslate/templates/index.html:81
+msgid "Edit"
+msgstr "Düzenle"
+
+#: libretranslate/templates/index.html:83
+msgid "Toggle dark/light mode"
+msgstr "Koyu/açık modu değiştir"
+
+#: libretranslate/templates/index.html:159
+msgid "Dismiss"
+msgstr "Kapat"
+
+#: libretranslate/templates/index.html:173
+msgid "Translation API"
+msgstr "Çeviri API'si"
+
+#: libretranslate/templates/index.html:177
+msgid "Translate Text"
+msgstr "Metin Çevir"
+
+#: libretranslate/templates/index.html:181
+msgid "Translate Files"
+msgstr "Dosya Çevir"
+
+#: libretranslate/templates/index.html:187
+msgid "Translate from"
+msgstr "Şundan çevir"
+
+#: libretranslate/templates/index.html:197
+msgid "Swap source and target languages"
+msgstr "Kaynak ve hedef dilleri değiştir"
+
+#: libretranslate/templates/index.html:200
+msgid "Translate into"
+msgstr "Şuna çevir"
+
+#: libretranslate/templates/index.html:212
+msgid "Text to translate"
+msgstr "Çevrilecek metin"
+
+#: libretranslate/templates/index.html:215
+msgid "Delete text"
+msgstr "Metni sil"
+
+#: libretranslate/templates/index.html:228
+msgid "Suggest translation"
+msgstr "Çeviri öner"
+
+#: libretranslate/templates/index.html:232
+msgid "Cancel"
+msgstr "İptal"
+
+#: libretranslate/templates/index.html:235
+msgid "Send"
+msgstr "Gönder"
+
+#: libretranslate/templates/index.html:251
+msgid "Supported file formats:"
+msgstr "Desteklenen dosya biçimleri:"
+
+#: libretranslate/templates/index.html:255
+msgid "File"
+msgstr "Dosya"
+
+#: libretranslate/templates/index.html:270
+msgid "Remove file"
+msgstr "Dosyayı kaldır"
+
+#: libretranslate/templates/index.html:277
+msgid "Translate"
+msgstr "Çevir"
+
+#: libretranslate/templates/index.html:278
+#: libretranslate/templates/index.html:322
+msgid "Download"
+msgstr "İndir"
+
+#: libretranslate/templates/index.html:297
+msgid "Request"
+msgstr "İstek"
+
+#: libretranslate/templates/index.html:302
+msgid "Response"
+msgstr "Yanıt"
+
+#: libretranslate/templates/index.html:317
+msgid "Open Source Machine Translation API"
+msgstr "Açık Kaynaklı Makine Çevirisi API'si"
+
+#: libretranslate/templates/index.html:318
+msgid "Self-Hosted. Offline Capable. Easy to Setup."
+msgstr "Kendiniz Barındırabileceğiniz. Çevrim Dışı Çalışabilen. Kurulumu Kolay."
+
+#: libretranslate/templates/index.html:337
+msgid "LibreTranslate"
+msgstr "LibreTranslate"
+
+#: libretranslate/templates/index.html:339
+msgid "License:"
+msgstr "Lisans:"
+
+#: libretranslate/templates/index.html:345
+#, python-format
+msgid "Made with %(heart)s by %(contributors)s and powered by %(engine)s"
+msgstr ""
+"%(contributors)s tarafından %(heart)s ile yapıldı ve %(engine)s "
+"tarafından desteklenmektedir"
+
+#: libretranslate/templates/index.html:345
+#, python-format
+msgid "%(libretranslate)s Contributors"
+msgstr "%(libretranslate)s Katkıda Bulunanlar"
+
+#~ msgid "multipart/form-data"
+#~ msgstr "çoklu bölüm/form-data"
+
+#~ msgid "Vietnamese"
+#~ msgstr "Vietnamca"
+
+#~ msgid ""
+#~ "This public API should be used for"
+#~ " testing, personal or infrequent use. "
+#~ "If you're going to run an "
+#~ "application in production, please "
+#~ "%(host_server)s or %(get_api_key)s."
+#~ msgstr ""
+#~ "Bu herkese açık API test, kişisel "
+#~ "veya ara sıra kullanım için "
+#~ "kullanılmalıdır. Üretimde bir uygulama "
+#~ "çalıştıracaksanız, lütfen %(host_server)s veya "
+#~ "%(get_api_key)s."
+
+#~ msgid "host your own server"
+#~ msgstr "kendi sunucunuzu barındırın"
+
+#~ msgid "get an API key"
+#~ msgstr "bir API anahtarı alın"
+
